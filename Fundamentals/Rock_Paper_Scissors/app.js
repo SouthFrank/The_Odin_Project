@@ -1,6 +1,3 @@
-
-
-
 //Computer's function that will randomly return either 'Rock', 'Paper' or 'Scissors'
 
 const getComputerChoice = () => {
