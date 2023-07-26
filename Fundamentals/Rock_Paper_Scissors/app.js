@@ -6,19 +6,29 @@
 const getComputerChoice = () => {
     const ranNum = Math.floor(Math.random() * 3) + 1;
     if(ranNum === 1){
-        return 'Rock';
+        return 'rock';
     } else if(ranNum === 2){
-        return 'Paper';
+        return 'paper';
     } else {
-        return 'Scissors';
+        return 'scissors';
     }
 }
 
 const computerSelection = getComputerChoice();
-console.log(computerSelection);
+const playerSelection = 'rock';
 
 //Function that plays a round between the user and computer
 
 const playRound = (playerSelection, computerSelection) => {
-
+    if(playerSelection === 'rock'){
+        if(computerSelection === 'paper'){
+            console.log('You lose! Better luck next time.');
+        } else if(computerSelection === 'scissors'){
+            console.log('You\'ve done it! You won!');
+        } else {
+            console.log('Ugh, a tie.');
+        }
+    }
 }
+
+playRound(playerSelection, computerSelection);
