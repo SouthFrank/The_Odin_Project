@@ -1,0 +1,1 @@
+This is a README for the first project in The Odin Project, a simple Rock, Paper, Scissors program
