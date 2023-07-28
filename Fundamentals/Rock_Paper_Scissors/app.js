@@ -11,7 +11,6 @@ const getComputerChoice = () => {
     }
 }
 
-const computerSelection = getComputerChoice();
 const playerSelection = 'rock';
 
 //Function that plays a round between the user and computer
@@ -26,6 +25,13 @@ const playRound = (playerSelection, computerSelection) => {
             console.log('Ugh, a tie.');
         }
     }
-}
+};
 
-playRound(playerSelection, computerSelection);
+const game = () => {
+    for(let i = 0; i < 5; i++){
+        const computerSelection = getComputerChoice();
+        playRound(playerSelection, computerSelection);
+    }
+};
+
+game();
