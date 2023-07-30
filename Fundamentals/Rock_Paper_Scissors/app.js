@@ -12,6 +12,8 @@ const getComputerChoice = () => {
 }
 
 const playerSelection = 'rock';
+let playerWinCount = 0;
+let compWinCount = 0;
 
 //Function that plays a round between the user and computer
 
