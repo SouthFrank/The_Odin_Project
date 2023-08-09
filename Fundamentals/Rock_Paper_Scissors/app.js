@@ -38,15 +38,25 @@ const playRoundNew = (playerSelection, computerSelection) => {
     }
 }
 
-const game = () => {
-    for(let i = 0; i < 5; i++){
-        const playerSelection = prompt('Rock, Paper, or Scissors?').toLowerCase();
+const buttons = document.querySelectorAll('button');
+const playerScore = document.querySelector('.playerScore');
+const compScore = document.querySelector('.compScore');
+
+buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
         const computerSelection = getComputerChoice();
-        console.log(playRoundNew(playerSelection, computerSelection));
-        console.log(playerWinCount);
-    }
-};
+        const playerSelection = e.target.
+        innerText.toLowerCase();
 
-game();
+        playRoundNew(playerSelection, computerSelection);
 
-// console.log(playRound(playerSelection, computerSelection));
+        playerScore.innerText = `The user has a score of: ${playerWinCount}.`;
+        compScore.innerText = `The computer has a score of: ${compWinCount}.`;
+
+        if(playerWinCount === 5){
+            alert('You have won the game!!');
+        } else if(compWinCount === 5){
+            alert('You have lost the game! Better luck next time.');
+        }
+    })  
+});
