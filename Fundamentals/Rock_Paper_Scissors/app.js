@@ -11,14 +11,10 @@ const getComputerChoice = () => {
     }
 };
 
-// const computerSelection = getComputerChoice();
-
 let playerWinCount = 0;
 let compWinCount = 0;
 
 //Function that plays a round between the user and computer
-
-// 
 
 const playRoundNew = (playerSelection, computerSelection) => {
     if(playerSelection === computerSelection){
