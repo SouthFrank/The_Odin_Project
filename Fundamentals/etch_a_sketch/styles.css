@@ -56,13 +56,8 @@ table {
 }
 
 .grid-item {
-    width: 37.5px;
-    height: 37.5px;
-    /* width: 10px;
-    height: 10px; */
-    /* background-color: lightgray; */
-    /* border: 1px solid black; */
-    /* margin-bottom: 10px; */
+    width: calc(6.25%);
+    height: calc(6.25%);
 }
 
 .grid-color {
