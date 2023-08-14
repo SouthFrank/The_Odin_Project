@@ -26,7 +26,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     width: 80%;
-    margin: 0 auto;
+    margin: 100px auto;
+	display: flex;
+	flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -50,16 +52,19 @@ table {
     justify-content: space-between;
     height: 600px;
     width: 600px;
-    margin-left: 80px;
-    margin-top: 80px;
+    margin: 0 auto;
     border: 1px solid black;
 }
 
 .grid-item {
-    width: calc(6.25%);
-    height: calc(6.25%);
+	height: '1';
+	width: '1';
 }
 
 .grid-color {
     background-color: black;
+}
+
+.grid-size {
+	margin: 20px auto;
 }
