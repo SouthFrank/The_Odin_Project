@@ -3,4 +3,5 @@ This is the top level README for the The_Odin_Project repository. New projects a
 ## Table of Contents
 ### Fundamentals Projects
 - Rock, Paper, Scissors
+- Etch a Sketch
 - Calculator
