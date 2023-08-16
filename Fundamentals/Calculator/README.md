@@ -1,4 +1,5 @@
-# calculator
+# Calculator
+
 Welcome to my calculator project from The Odin Project! This is a fully-functioning calculator made using HTML, CSS, and JS.
 
 ** It demonstrates the following:
