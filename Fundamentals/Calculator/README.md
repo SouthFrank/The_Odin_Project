@@ -2,13 +2,13 @@
 
 Welcome to my calculator project from The Odin Project! This is a fully-functioning calculator made using HTML, CSS, and JS.
 
-** It demonstrates the following:
+## It demonstrates the following:
 -Effective use of CSS grid to format the shape of the calculator
 -Understanding of how HTML, JS, and CSS work together to form one cohesive project
 -Use of the DOM to select and manipulate elements
 -Use of JS (especially switch statements) to add functionality
 
-** Functionality:
+## Functionality:
 -All button clicks will add the correct input to the output box
 -The AC button will clear the output box
 -The DEL button will erase one character at a time
@@ -17,10 +17,10 @@ Welcome to my calculator project from The Odin Project! This is a fully-function
 -Use of word wrap allows the output box to take up as many lines as needed, without overflowing
 -Output box updated with keypresses from the keyboard 
 
-Features to be added:
+## Features to be added:
 -A previous and current number counter
 -Additional buttons, such as '(', ')'
 -Media Queries for screen sizes below a width of 450px
 
-IMPORTANT:
+## IMPORTANT:
 -Improve DEL button functionality
