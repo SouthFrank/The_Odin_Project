@@ -3,7 +3,7 @@
 Welcome to my RPS project from The Odin Project! Play a quick game of Rock, Paper, Scissors against the computer.
 
 ## It demonstrates the following:
-- Effective use of CSS grid to format the shape of the calculator
+- DOM manipulation to update scores and to add event listeners to the button
 
 ## Functionality:
 - All button clicks will add the correct input to the output box
