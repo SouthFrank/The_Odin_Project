@@ -3,18 +3,12 @@
 Welcome to my RPS project from The Odin Project! Play a quick game of Rock, Paper, Scissors against the computer.
 
 ## It demonstrates the following:
-- DOM manipulation to update scores and to add event listeners to the button
+- DOM manipulation to update scores and to add event listeners to the buttons
+- Real-time score keeping and notification of a winner when either the user or computer hit 5
 
 ## Functionality:
-- All button clicks will add the correct input to the output box
-- The AC button will clear the output box
-- The DEL button will erase one character at a time
-- The = button will evaluate the expression as seen in the output
-- All standard math operations work as intended
-- Use of word wrap allows the output box to take up as many lines as needed, without overflowing
-- Output box updated with keypresses from the keyboard 
+- Choose your choice of Rock, Paper, or Scissors
+- After choosing, your choice will play a round against a randomized choice from the 'computer'
 
 ## Features to be added:
-- A previous and current number counter
-- Additional buttons, such as '(', ')'
-- Media Queries for screen sizes below a width of 450px
+- Updated styling to the page - header, images for choice of RPS, button improvements
