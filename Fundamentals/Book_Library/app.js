@@ -61,10 +61,3 @@ newBookBtn.addEventListener('click', (e) => {
     console.log(myLibrary[0].title);
     addBookToLibrary();
 })
-
-
-
-// const holes = new Book('Holes', 'C.H. Hue', 375, true);
-// myLibrary.push(holes);
-
-// addBookToLibrary();
