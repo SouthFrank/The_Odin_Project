@@ -64,17 +64,28 @@ table {
     width: 15%;
     height: 160px;
     border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .book-delete {
     height: 10px;
     width: 10px;
-    background-color: black;    
+    background-color: black;   
+    font-size: 12px;
+    color: whitesmoke; 
+    margin: 0 5px 5px auto;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.book-delete:hover {
+    cursor: pointer;
 }
 
 .bookitem:last-child {
-    position: relative;
-    bottom: 20px;
+    /* margin-left: auto; */
 }
 
 .book-form {
