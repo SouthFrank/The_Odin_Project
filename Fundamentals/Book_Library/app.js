@@ -15,22 +15,35 @@ const addBookToLibrary = () => {
         const libraryIndex = myLibrary[myLibrary.length - 1];
         const newBook = document.createElement('div');
         newBook.classList.add('book-item');
+        const bookInfo = document.createElement('div');
+        // const bookRemove = document.createElement('div');
+
         const bookTitle = document.createElement('h2');
         const bookAuthor = document.createElement('h3');
         const bookPages = document.createElement('h3');
         const bookHaveRead = document.createElement('h3');
         const bookDelete = document.createElement('div');
+
         bookDelete.classList.add('book-delete');
         bookTitle.innerText = libraryIndex.title;
         bookAuthor.innerText = libraryIndex.author;
         bookPages.innerText = libraryIndex.pages;
         bookHaveRead.innerText = libraryIndex.read;
-        newBook.appendChild(bookTitle);   
-        newBook.appendChild(bookAuthor);   
-        newBook.appendChild(bookPages);   
-        newBook.appendChild(bookHaveRead);  
-        newBook.appendChild(bookDelete); 
+        bookDelete.innerText = 'X';
+        bookDelete.addEventListener('click', (e) => {
+            e.target.parentElement.remove();
+        })
+
+        bookInfo.appendChild(bookTitle);   
+        bookInfo.appendChild(bookAuthor);   
+        bookInfo.appendChild(bookPages);   
+        bookInfo.appendChild(bookHaveRead);  
+        // bookRemove.appendChild(bookDelete); 
+        newBook.appendChild(bookInfo);
+        newBook.appendChild(bookDelete);
         bookshelf.appendChild(newBook);
+
+        myLibrary.forEach(book => console.log(book));
 };
 
 bookFormBtn.addEventListener('click', (e) => {
@@ -45,3 +58,5 @@ newBookBtn.addEventListener('click', (e) => {
     console.log(myLibrary[0].title);
     addBookToLibrary();
 })
+
+
