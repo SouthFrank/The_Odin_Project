@@ -28,7 +28,11 @@ const addBookToLibrary = () => {
         bookTitle.innerText = libraryIndex.title;
         bookAuthor.innerText = libraryIndex.author;
         bookPages.innerText = libraryIndex.pages;
-        bookHaveRead.innerText = libraryIndex.read;
+
+        let haveRead = libraryIndex.read;
+        haveRead = haveRead[0].toUpperCase() + haveRead.slice(1, haveRead.length).toLowerCase();
+
+        bookHaveRead.innerText = haveRead;
         bookDelete.innerText = 'X';
         bookDelete.addEventListener('click', (e) => {
             e.target.parentElement.remove();
