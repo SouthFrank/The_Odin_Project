@@ -21,7 +21,7 @@ const addBookToLibrary = () => {
         const bookTitle = document.createElement('h2');
         const bookAuthor = document.createElement('h3');
         const bookPages = document.createElement('h3');
-        const bookHaveRead = document.createElement('h3');
+        const bookHaveRead = document.createElement('div');
         const bookDelete = document.createElement('div');
 
         bookDelete.classList.add('book-delete');
@@ -29,10 +29,20 @@ const addBookToLibrary = () => {
         bookAuthor.innerText = libraryIndex.author;
         bookPages.innerText = libraryIndex.pages;
 
-        let haveRead = libraryIndex.read;
-        haveRead = haveRead[0].toUpperCase() + haveRead.slice(1, haveRead.length).toLowerCase();
+        let bookRead = libraryIndex.read;
+        bookRead = bookRead[0].toUpperCase() + bookRead.slice(1, bookRead.length).toLowerCase();
 
-        bookHaveRead.innerText = haveRead;
+        bookHaveRead.innerText = 'Read?';
+        bookHaveRead.classList.add('have-read-btn');
+        if(bookRead === 'No'){
+            bookHaveRead.classList.add('have-not-read');
+        } 
+
+        bookHaveRead.addEventListener('click', () => {
+            bookHaveRead.classList.toggle('have-not-read');
+        })
+
+
         bookDelete.innerText = 'X';
         bookDelete.addEventListener('click', (e) => {
             e.target.parentElement.remove();
