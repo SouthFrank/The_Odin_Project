@@ -5,4 +5,5 @@ This is the top level README for the The_Odin_Project repository. New projects a
 - Rock, Paper, Scissors - *completed*
 - Etch a Sketch - *completed*
 - Calculator - *completed*
-- Book Library - *refactor in progress*
+- Book Library - *completed*
+- Tic Tac Toe - *in progress*
