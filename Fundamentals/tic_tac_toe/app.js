@@ -1,17 +1,18 @@
-const gameSquares = Array.from(document.querySelectorAll('.gameSquare'));
+const gameBoard = document.querySelector('#gameBoard');
+const gameInfo = document.querySelector('#info');
 
+const gameArr = ['', '', '', '', '', '', '', '', ''];
 
-console.log(gameSquares);
-
-let playerMarker = 'X'
-
-gameSquares.forEach(square => {
-    square.addEventListener('click', () => {
-        square.textContent = playerMarker;
-        if(playerMarker = 'X'){
-            playerMarker = 'O';
-        } else {
-            playerMarker = 'X';
-        }
+const createBoard = (() => {
+    gameArr.forEach((_cell, index) => {
+        const gameSquare = document.createElement('div');
+        gameSquare.classList.add('square');
+        gameSquare.id = index;
+        gameSquare.addEventListener('click', addMarker);
+        gameBoard.appendChild(gameSquare);
     })
-})
+})();
+
+function addMarker(e) {
+    console.log(e.target);
+}
