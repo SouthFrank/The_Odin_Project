@@ -21,4 +21,40 @@ body {
 	width: 150px;
 	border: 1px solid black;
 	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.circle {
+	height: 130px;
+	width: 130px;
+	border: 10px solid green;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.cross {
+	height: 130px;
+	width: 130px;
+	position: relative;
+	transform: rotate(45deg);
+}
+.cross:after, .cross:before {
+	position: absolute;
+	content: "";
+	background: red;
+}
+.cross:after {
+	top: 50%;
+	height: 30%;
+	margin-top: -15%;
+	width: 100%;
+}
+.cross:before {
+	left: 50%;
+	width: 30%; 
+	margin-left: -15%;
+	height: 100%;
+}
+
