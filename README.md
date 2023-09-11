@@ -6,6 +6,6 @@ This is the top level README for the The_Odin_Project repository. New projects a
 - Etch a Sketch - *completed*
 - Calculator - *completed*
 - Book Library - *completed*
-- Tic Tac Toe - *in progress*
+- Tic Tac Toe - *completed*
 
 ### Exercises
