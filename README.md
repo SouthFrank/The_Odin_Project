@@ -8,5 +8,3 @@ This is the top level README for the The_Odin_Project repository. New projects a
 - Book Library - *completed*
 - Tic Tac Toe - *completed*
 - Restaurant Page - *in progress*
-
-### Exercises
